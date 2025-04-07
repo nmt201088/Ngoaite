@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 10px; /* Giảm margin từ 20px */
+    background-color: #f4f4f4;
+}
+
+.title {
+    font-size: 24px; /* Giảm từ 32px */
+    font-weight: bold;
+    text-align: center;
+    color: #333;
+    margin-bottom: 10px; /* Giảm từ 20px */
+}
+
+table {
+    width: 90%; /* Giảm từ 100%, để hẹp hơn */
+    max-width: 600px; /* Thêm giới hạn chiều rộng */
+    margin: 0 auto; /* Căn giữa */
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Giảm shadow */
+}
+
+th, td {
+    padding: 6px; /* Giảm từ 10px */
+    text-align: left;
+    border: 1px solid #ddd;
+    font-size: 14px; /* Thêm font nhỏ hơn */
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+input {
+    width: 100%;
+    padding: 3px; /* Giảm từ 5px */
+    border: 1px solid #ccc;
+    border-radius: 3px; /* Giảm từ 4px */
+    font-size: 14px; /* Đồng bộ font */
+}
+
+tfoot td {
+    font-weight: bold;
+    background-color: #f9f9f9;
+}
+
+.button-container {
+    text-align: center;
+    margin-top: 10px; /* Giảm từ 20px */
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 6px 12px; /* Giảm từ 10px 20px */
+    border: none;
+    border-radius: 3px; /* Giảm từ 4px */
+    cursor: pointer;
+    margin: 0 5px; /* Giảm từ 10px */
+    font-size: 14px; /* Thêm font nhỏ hơn */
+}
+
+button:hover {
+    background-color: #45a049;
+}

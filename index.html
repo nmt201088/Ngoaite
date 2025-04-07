@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Công Cụ Đổi Tiền</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="title">Công Cụ Đổi Tiền</div>
+    <table id="currencyTable">
+        <thead>
+            <tr>
+                <th>Loại Tiền</th>
+                <th>Số Lượng (tờ)</th>
+                <th>Tỷ Giá (VND)</th>
+                <th>Giá Trị (VND)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>USD</td><td><input type="number" class="quantity" step="0.01"></td><td><input type="number" class="rate" value="25000"></td><td class="value">0</td></tr>
+            <tr><td>Euro</td><td><input type="number" class="quantity" step="0.01"></td><td><input type="number" class="rate" value="27000"></td><td class="value">0</td></tr>
+            <tr><td>Úc (AUD)</td><td><input type="number" class="quantity" step="0.01"></td><td><input type="number" class="rate" value="17000"></td><td class="value">0</td></tr>
+            <tr><td>Ca (CAD)</td><td><input type="number" class="quantity" step="0.01"></td><td><input type="number" class="rate" value="18000"></td><td class="value">0</td></tr>
+            <tr><td>Yên (JPY)</td><td><input type="number" class="quantity" step="0.01"></td><td><input type="number" class="rate" value="160"></td><td class="value">0</td></tr>
+            <tr><td>Hàn (KRW)</td><td><input type="number" class="quantity" step="0.01"></td><td><input type="number" class="rate" value="20"></td><td class="value">0</td></tr>
+            <tr><td>TQ (CNY)</td><td><input type="number" class="quantity" step="0.01"></td><td><input type="number" class="rate" value="3500"></td><td class="value">0</td></tr>
+            <tr><td>Đài (TWD)</td><td><input type="number" class="quantity" step="0.01"></td><td><input type="number" class="rate" value="800"></td><td class="value">0</td></tr>
+            <tr><td>HKong (HKD)</td><td><input type="number" class="quantity" step="0.01"></td><td><input type="number" class="rate" value="3200"></td><td class="value">0</td></tr>
+            <tr><td>Thái (THB)</td><td><input type="number" class="quantity" step="0.01"></td><td><input type="number" class="rate" value="750"></td><td class="value">0</td></tr>
+            <tr><td>Mã (MYR)</td><td><input type="number" class="quantity" step="0.01"></td><td><input type="number" class="rate" value="5700"></td><td class="value">0</td></tr>
+            <tr><td>Sing (SGD)</td><td><input type="number" class="quantity" step="0.01"></td><td><input type="number" class="rate" value="18500"></td><td class="value">0</td></tr>
+            <tr><td>Bảng (GBP)</td><td><input type="number" class="quantity" step="0.01"></td><td><input type="number" class="rate" value="32000"></td><td class="value">0</td></tr>
+            <tr><td>T Sỹ (CHF)</td><td><input type="number" class="quantity" step="0.01"></td><td><input type="number" class="rate" value="26000"></td><td class="value">0</td></tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">Tổng số tiền</td>
+                <td id="totalValue">0</td>
+            </tr>
+        </tfoot>
+    </table>
+    <div class="button-container">
+        <button onclick="calculateMoney()">Tính Tiền</button>
+        <button onclick="saveToExcel()">Lưu Dữ Liệu</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
